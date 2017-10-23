@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E09141521F9D68E70033C69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09141511F9D68E70033C69E /* AppDelegate.swift */; };
+		E09141541F9D68E70033C69E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09141531F9D68E70033C69E /* ViewController.swift */; };
+		E09141561F9D68E70033C69E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09141551F9D68E70033C69E /* Assets.xcassets */; };
+		E09141591F9D68E70033C69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09141571F9D68E70033C69E /* Main.storyboard */; };
+		E09141651F9D68E70033C69E /* SendEmailDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09141641F9D68E70033C69E /* SendEmailDemoTests.swift */; };
+		E09141701F9D693F0033C69E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E091416F1F9D693F0033C69E /* Cartfile */; };
+		E09141721F9D69E20033C69E /* SendEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09141711F9D69E20033C69E /* SendEmail.swift */; };
+		E09141741F9D6A5D0033C69E /* MailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09141731F9D6A5D0033C69E /* MailCore.framework */; };
+		E09141751F9D6A5D0033C69E /* MailCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E09141731F9D6A5D0033C69E /* MailCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E09141611F9D68E70033C69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E09141461F9D68E70033C69E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E091414D1F9D68E70033C69E;
+			remoteInfo = SendEmailDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E09141761F9D6A5D0033C69E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E09141751F9D6A5D0033C69E /* MailCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E091414E1F9D68E70033C69E /* SendEmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendEmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09141511F9D68E70033C69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E09141531F9D68E70033C69E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E09141551F9D68E70033C69E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E09141581F9D68E70033C69E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E091415A1F9D68E70033C69E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E091415B1F9D68E70033C69E /* SendEmailDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendEmailDemo.entitlements; sourceTree = "<group>"; };
+		E09141601F9D68E70033C69E /* SendEmailDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendEmailDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09141641F9D68E70033C69E /* SendEmailDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailDemoTests.swift; sourceTree = "<group>"; };
+		E09141661F9D68E70033C69E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E091416F1F9D693F0033C69E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		E09141711F9D69E20033C69E /* SendEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEmail.swift; sourceTree = "<group>"; };
+		E09141731F9D6A5D0033C69E /* MailCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MailCore.framework; path = Carthage/Build/Mac/MailCore.framework; sourceTree = "<group>"; };
+		E09141771F9D6AA60033C69E /* SendEmailDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendEmailDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E091414B1F9D68E70033C69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09141741F9D6A5D0033C69E /* MailCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E091415D1F9D68E70033C69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E09141451F9D68E70033C69E = {
+			isa = PBXGroup;
+			children = (
+				E09141731F9D6A5D0033C69E /* MailCore.framework */,
+				E091416F1F9D693F0033C69E /* Cartfile */,
+				E09141501F9D68E70033C69E /* SendEmailDemo */,
+				E09141631F9D68E70033C69E /* SendEmailDemoTests */,
+				E091414F1F9D68E70033C69E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E091414F1F9D68E70033C69E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E091414E1F9D68E70033C69E /* SendEmailDemo.app */,
+				E09141601F9D68E70033C69E /* SendEmailDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E09141501F9D68E70033C69E /* SendEmailDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E09141511F9D68E70033C69E /* AppDelegate.swift */,
+				E09141531F9D68E70033C69E /* ViewController.swift */,
+				E09141711F9D69E20033C69E /* SendEmail.swift */,
+				E09141551F9D68E70033C69E /* Assets.xcassets */,
+				E09141571F9D68E70033C69E /* Main.storyboard */,
+				E091415A1F9D68E70033C69E /* Info.plist */,
+				E091415B1F9D68E70033C69E /* SendEmailDemo.entitlements */,
+				E09141771F9D6AA60033C69E /* SendEmailDemo-Bridging-Header.h */,
+			);
+			path = SendEmailDemo;
+			sourceTree = "<group>";
+		};
+		E09141631F9D68E70033C69E /* SendEmailDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E09141641F9D68E70033C69E /* SendEmailDemoTests.swift */,
+				E09141661F9D68E70033C69E /* Info.plist */,
+			);
+			path = SendEmailDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E091414D1F9D68E70033C69E /* SendEmailDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09141691F9D68E70033C69E /* Build configuration list for PBXNativeTarget "SendEmailDemo" */;
+			buildPhases = (
+				E091414A1F9D68E70033C69E /* Sources */,
+				E091414B1F9D68E70033C69E /* Frameworks */,
+				E091414C1F9D68E70033C69E /* Resources */,
+				E09141761F9D6A5D0033C69E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendEmailDemo;
+			productName = SendEmailDemo;
+			productReference = E091414E1F9D68E70033C69E /* SendEmailDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E091415F1F9D68E70033C69E /* SendEmailDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E091416C1F9D68E70033C69E /* Build configuration list for PBXNativeTarget "SendEmailDemoTests" */;
+			buildPhases = (
+				E091415C1F9D68E70033C69E /* Sources */,
+				E091415D1F9D68E70033C69E /* Frameworks */,
+				E091415E1F9D68E70033C69E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E09141621F9D68E70033C69E /* PBXTargetDependency */,
+			);
+			name = SendEmailDemoTests;
+			productName = SendEmailDemoTests;
+			productReference = E09141601F9D68E70033C69E /* SendEmailDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E09141461F9D68E70033C69E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Jean-Francois Leblanc";
+				TargetAttributes = {
+					E091414D1F9D68E70033C69E = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					E091415F1F9D68E70033C69E = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E091414D1F9D68E70033C69E;
+					};
+				};
+			};
+			buildConfigurationList = E09141491F9D68E70033C69E /* Build configuration list for PBXProject "SendEmailDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E09141451F9D68E70033C69E;
+			productRefGroup = E091414F1F9D68E70033C69E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E091414D1F9D68E70033C69E /* SendEmailDemo */,
+				E091415F1F9D68E70033C69E /* SendEmailDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E091414C1F9D68E70033C69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09141701F9D693F0033C69E /* Cartfile in Resources */,
+				E09141561F9D68E70033C69E /* Assets.xcassets in Resources */,
+				E09141591F9D68E70033C69E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E091415E1F9D68E70033C69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E091414A1F9D68E70033C69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09141721F9D69E20033C69E /* SendEmail.swift in Sources */,
+				E09141541F9D68E70033C69E /* ViewController.swift in Sources */,
+				E09141521F9D68E70033C69E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E091415C1F9D68E70033C69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09141651F9D68E70033C69E /* SendEmailDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E09141621F9D68E70033C69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E091414D1F9D68E70033C69E /* SendEmailDemo */;
+			targetProxy = E09141611F9D68E70033C69E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E09141571F9D68E70033C69E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09141581F9D68E70033C69E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E09141671F9D68E70033C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E09141681F9D68E70033C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E091416A1F9D68E70033C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SendEmailDemo/SendEmailDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SendEmailDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leblanc.SendEmailDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SendEmailDemo/SendEmailDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E091416B1F9D68E70033C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SendEmailDemo/SendEmailDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SendEmailDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leblanc.SendEmailDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SendEmailDemo/SendEmailDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		E091416D1F9D68E70033C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SendEmailDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leblanc.SendEmailDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendEmailDemo.app/Contents/MacOS/SendEmailDemo";
+			};
+			name = Debug;
+		};
+		E091416E1F9D68E70033C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SendEmailDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leblanc.SendEmailDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendEmailDemo.app/Contents/MacOS/SendEmailDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E09141491F9D68E70033C69E /* Build configuration list for PBXProject "SendEmailDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09141671F9D68E70033C69E /* Debug */,
+				E09141681F9D68E70033C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09141691F9D68E70033C69E /* Build configuration list for PBXNativeTarget "SendEmailDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E091416A1F9D68E70033C69E /* Debug */,
+				E091416B1F9D68E70033C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E091416C1F9D68E70033C69E /* Build configuration list for PBXNativeTarget "SendEmailDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E091416D1F9D68E70033C69E /* Debug */,
+				E091416E1F9D68E70033C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E09141461F9D68E70033C69E /* Project object */;
+}
