@@ -47,7 +47,7 @@ class SendEmail: NSObject {
             if(error != nil){
                 //Keep sending the email till it succeeds.  needs to know for security reasons.
                 // self.sendEmailToCustomer(emailid)
-                print("customer email failed.\(String(describing: error?.code)) \(error)")
+                print("customer email failed.\(String(describing: error?.code)) \(String(describing: error))")
 
             }
             else{
