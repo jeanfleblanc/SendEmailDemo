@@ -47,7 +47,7 @@ class SendEmail: NSObject {
             if(error != nil){
                 //Keep sending the email till it succeeds.  needs to know for security reasons.
                 // self.sendEmailToCustomer(emailid)
-                print("customer email failed.\(error?.code) \(error)")
+                print("customer email failed.\(String(describing: error?.code)) \(error)")
 
             }
             else{
@@ -67,6 +67,44 @@ class SendEmail: NSObject {
       //  }
       //  }
       //      } as! (Error?) -> Void
+            } as! (Error?) -> Void)
+    }
+    
+    func sendEmailInClear(emailid:String?)
+    {
+        let session : MCOSMTPSession = MCOSMTPSession()
+        session.hostname = "mail.***.com"
+        session.port = 25
+        session.connectionType = MCOConnectionType.clear
+        
+        let builder = MCOMessageBuilder()
+        builder.header.from = MCOAddress(displayName: " iPad App", mailbox:"INVESTOR@xxx.com")
+        builder.header.to = [MCOAddress(displayName: "iPad App", mailbox:emailid)]
+        
+        builder.header.subject = "Email Link   \(UserDefaults.standard.value(forKey: "branch_id")!)"
+        builder.htmlBody = "Thanks for choosing . Here is link you wanted to have in your inbox"
+        let data = builder.data()
+        
+        let sendOperation : MCOSMTPSendOperation = session.sendOperation(with: data)
+        UserDefaults.standard.setValue(emailid, forKey: "Customer_EmailId")
+        sendOperation.start({
+            (error : NSError?) -> Void in
+            
+            if(error != nil){
+                //Keep sending the email till it succeeds.  needs to know for security reasons.
+                // self.sendEmailToCustomer(emailid)
+                print("customer email failed.\(String(describing: error?.code)) \(String(describing: error))")
+                //self.showAlertMessage(MESSAGE_EMAIL_Not_SENT, title:"Email Not Sent", actions: [UIAlertAction(title: "OK", style: .Default) {action in
+                //    }], withSound: false)
+            }
+            else{
+                //Email sent successfully.
+                
+                print("Email sent successfully \(String(describing: emailid))")
+                //self.showAlertMessage(MESSAGE_EMAIL_SENT, title:"Email Sent", actions: [UIAlertAction(title: "OK", style: .Default) {action in
+                //    }], withSound: false)
+                
+            }
             } as! (Error?) -> Void)
     }
 }
